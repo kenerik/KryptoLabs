@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "KryptoLabs",
+    "motivations": "We have a vast knowledge network and are on friendly terms with government, legal, top-tier exchanges, and local exchanges. \n\nAll this is routed in a large crypto community in the Nordic countries that operate on different social media platforms. \n\nWe will make a difference and treat our role as a DRep respectfully and subsequently. \n\nAll members operate individually but share and contribute to growing the blockchain industry with the Cardano community",
+    "objectives": "Krypto Labs fully supports sharing information and believes that knowledge about blockchain technology should be free and support open-source development. \n\nAs an active DRep, we will contribute to the development of Cardano governance, supporting national and global needs.\n\nKrypto Labs with its resources will be represented in the Cardano governance system entity with our knowledge and expertise to deliver governance with the absolute best effort. ",
+    "paymentAddress": "addr1q8xy2a85z83xqm9g0wl448pvh4uw0x52y56dqwvuk5av2xsmqgunwr0mdd4rljrnkghxmkux2f3tenskcz32q6tahgqq7szrwt",
+    "qualifications": "Krypto Labs is registered as one unit but is represented by many individual contributors.  They represent a vast network of experts in the blockchain industry and the crypto space. \n\nKrypto Labs is a non-profit organization that engages in blockchain and crypto-related activities in the Nordic countries. \n\nKrypto Labs members have a good footprint in the Cardano ecosystem and we have well-known members of the Krypto Labs community in the Cardano ecosystem.\n\nAs a non-profit organization, we share the knowledge for legal, technical, and know-how of the blockchain industry. \n\nThe channel Krypto Labs primarily streams on YouTube three times a week, covering various blockchain-related topics and macroeconomics.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Website",
+        "uri": "https://www.kryptolabs.no/"
+      },
+      {
+        "@type": "Identity",
+        "label": "Chairman of KryptoLabs - Ken Erik Ølmeheim on X (Twitter)",
+        "uri": "https://x.com/kenerik"
+      }
+    ]
+  }
+}
