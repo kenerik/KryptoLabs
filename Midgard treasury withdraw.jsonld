@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "KryptoLabs, a Cardano DRep, I vote yes on the ₳2,162,096 treasury withdrawal for Midgard, an optimistic rollup L2 framework by Anastasia Labs, administered by Intersect.\nThis decision stems from Midgard's alignment with Cardano's scalability, security, and sustainability goals.\n\nMidgard revolutionizes Cardano by introducing the first optimistic rollup L2, enhancing throughput, reducing costs, and enabling complex dApps while preserving decentralization. Leveraging Cardano's EUTXO model, it offers permissionless fraud proofs, no centralized sequencers or multisigs, and full L1 security inheritance, unique features impossible on Ethereum, Solana, or Sui.\nMost important it have a tokenless design,  so fees are in ADA that drive L1 revenue via compacted onchain blocks, unlike off-chain solutions.\n\nThe project scope details a modular framework for tailored rollups, with phased development.\nComparisons show efficiency: similar to Fuel's UTXO-based L2 but optimized for Cardano. Anastasia Labs' track record in contributing to major dApps and 50+ open-source tools ensures feasibility, with progress on key components like state queues and fraud proofs.\n\nEconomic benefits include sustained fee revenue without user fee hikes, fostering adoption. Governance via Intersect, with audited smart contracts and third-party oversight, guarantees transparency. Risks are mitigated through Agile methodologies and iterative sprints"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
