@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "As Krypto Labs, a Cardano DRep deeply engaged in the 2025 budget process, I am voting YES on the ₳220,914 Pallas proposal.\nThis funding is crucial for sustaining Pallas, a foundational suite of Rust-native libraries that provides essential blockchain primitives like cryptographic functions and CBOR encoding.\n\nPallas is a cornerstone for critical projects such as Aiken, Lucid, and Mithril, enabling developers to build higher level applications like explorers, smart contracts and wallets more efficiently.\nThis investment diversifies Cardano's tooling beyond its Haskell heavy ecosystem, attracting a broader developer base and fostering innovation.\nThe project's active open-source collaboration, with numerous commits, pull requests, and contributors, underscores its community value.\n\nTxPipe, the proposer, has a proven track record of over three years in open source delivery within Cardano, successfully completing multiple Project Catalyst milestones. The requested ₳220,914 for 0.625 FTEs represents a modest, high-ROI investment, ensuring ongoing maintenance, bug fixes, and feature development.\nThis prevents stagnation and bolsters the entire ecosystem's resilience.\n\nFurthermore, the proposal emphasizes transparent development, public milestones, and third party assurance via Intersect, mitigating risks and ensuring accountability. Approving this proposal aligns directly with our commitment to strengthening Cardano's core infrastructure, enhancing developer accessibility, and promoting long term growth for all stakeholders."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
