@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "As a DRep, I support funding the UTxO RPC proposal for its role in enhancing Cardano’s developer ecosystem. UTxO RPC, led by TxPipe’s Santiago Carmuega, standardizes interactions with UTxO-based blockchains, improving interoperability, performance, and reusability. Its early adoption by projects like Lace, Mesh, and Amaru, alongside integration with tools like the Blaze UTxORPC Provider, underscores its value. The proposal’s modest request for 0.5 FTE blockchain developer and 0.125 FTE tech lead over 12 months ensures ongoing maintenance, bug fixes, new SDKs, and updated documentation, aligning with Cardano’s evolving needs.\n\nTxPipe’s 3+ years of open source contributions, including Pallas, Dolos, and completed Catalyst projects, demonstrate reliability and transparency, verifiable via public GitHub repositories. The open source nature fosters community collaboration, ensuring accountability. By supporting UTxO RPC, we enable seamless dApp development, reduce complexity, and strengthen Cardano’s infrastructure. I do not see any significant risks or redundancies and the project’s focus on sustainability aligns with long term Cardano blockchain ecosystem goals. Voting yes secures a vital tool for developers, driving Cardano’s growth and adoption."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
