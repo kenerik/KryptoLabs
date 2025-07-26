@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "DRep Krypto Labs support funding the Lucid Evolution Maintenance proposal (₳130,903) to sustain a vital Cardano developer tool.\nOriginating as Lucid by Spacebudz in 2021, this TypeScript library simplified off chain transactions for dApps.\nBy 2023, it was unmaintained, risking ecosystem stagnation. Anastasia Labs forked it, creating Lucid Evolution via Catalyst Fund 11 (₳200,000).\nThe rewrite introduced modern architecture, type safety, Conway-era governance and integrations with 1,050+ commits and robust documentation.\nEcosystem Dependency: Lucid Evolution is critical, ranking high in 2024 developer surveys. It powers DeFi, wallets, infrastructure, and tools. Without it, developers risk disruptions, slowing Cardano’s growth.\nMilestone based contracts and Intersect auditing ensure accountability. This aligns with Cardano’s open source ethos, supporting a community revived public good.\nVoting yes secures developer efficiency and ecosystem resilience."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
